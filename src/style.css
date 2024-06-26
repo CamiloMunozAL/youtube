@@ -1,0 +1,220 @@
+/* SETTINGS
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header {
+    background-color: #fff;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+/* TOOLS
+========================== */
+
+footer {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer_logo {
+    width: 100px;
+}
+
+
+
+
+/* GENERIC
+========================== */
+
+
+/* ELEMENTS
+========================== */
+/* Resalto de videos */
+aside section:hover {
+    outline: 4px solid red;
+}
+
+aside section:active {
+    background-color: gray;
+}
+
+aside section {
+    overflow: auto;
+}
+
+main section input {
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+}
+
+.e-Comentar {
+    background-color: white;
+    color: black
+}
+
+
+/* OBJECTS
+========================== */
+/*me gusta y suscribete*/
+.like {
+    border: none;
+    position: relative;
+
+}
+
+.like:active {
+    color: red;
+
+}
+
+/* COMPONENTS
+========================== */
+
+
+.nav_left,
+.nav_center,
+.nav_right {
+    display: flex;
+    align-items: center;
+}
+
+.nav_logo img {
+    height: 40px;
+}
+
+.nav_icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #606060;
+}
+
+/* Center section styles */
+.nav_search-form {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+.nav_search-input {
+    border: none;
+    background: none;
+    padding: 8px;
+    width: 500px;
+}
+
+.nav_search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #606060;
+}
+
+
+@media (max-width: 768px) {
+    .nav_search-input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav_search-input {
+        width: 100px;
+    }
+}
+
+
+/* VIDEOS RIGTH POSN */
+
+aside {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside section {
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 0.8em;
+}
+
+aside img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+aside section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+@media (min-width: 700px)
+    {main {
+     display:grid;
+        overflow: auto;
+        grid-template-columns: 2.5fr 1fr ;
+        flex-direction:row;
+        border: 1px solid black;
+
+
+    }
+
+    .e-video {
+        width: 100%;
+        height: 60%;
+
+    }
+
+     .c-InformacionVideo {
+         border: 4px solid black;
+
+     }
+    .c-Comentarios {
+        overflow: scroll;
+        text-overflow: ellipsis;;
+
+    }
+}
+
